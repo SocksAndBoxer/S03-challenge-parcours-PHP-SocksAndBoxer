@@ -30,8 +30,9 @@ require_once '../inc/functions.php';
  *      calculPlage(1, 2, 3) doit renvoyer 9
  */
 
-function calculPlage() {
-
+function calculPlage($a, $b, $c) {
+    $total = $a + $b + ($c * 2);
+    return $total;
 }
 
 
