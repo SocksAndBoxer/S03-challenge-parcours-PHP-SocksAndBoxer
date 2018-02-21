@@ -25,7 +25,20 @@ require_once '../inc/functions.php';
  */
 
 function hello() {
-
+    $birthDate = $_GET['birth'];
+    $birthDate = explode("-", $birthDate);
+    $age = date("Y") - $birthDate[2];
+    if ($birthDate[1] == date("m")) {
+        if ($birthDate[0] < date("j")) {
+            return $date--;
+        }
+        else return $date;
+    }
+    if ($birthDate[1] < date("m")) {
+        return $date--;
+    } else {
+    return 'Bonjour ' . $_GET['name'] . ', comment tu vas ? Tu as ' . $age . ' maintenant !';
+}
 }
 
 
