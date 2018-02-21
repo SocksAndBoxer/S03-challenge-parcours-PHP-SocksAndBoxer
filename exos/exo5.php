@@ -29,7 +29,7 @@ require_once '../inc/functions.php';
  */
 
 function hello() {
-
+    return 'Bonjour ' . $_GET['name'] . ', comment tu vas ?';
 }
 
 
