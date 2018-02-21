@@ -24,7 +24,12 @@ require_once '../inc/functions.php';
  */
 
 function numerosLoto() {
-
+    $numLoto = [];
+    for ($i = 0; $i < 5; $i++) {
+        $numLoto[] = rand(1, 49);
+    }
+    $numLoto[] = rand(1, 10);
+    return $numLoto;
 }
 
 
