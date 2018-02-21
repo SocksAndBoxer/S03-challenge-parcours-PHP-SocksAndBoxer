@@ -24,7 +24,7 @@ require_once '../inc/functions.php';
  */
 
 function numeroLoto() {
-
+        return rand(1, 49);
 }
 
 
