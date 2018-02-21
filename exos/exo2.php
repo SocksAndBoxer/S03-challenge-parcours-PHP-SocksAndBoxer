@@ -30,8 +30,14 @@ require_once '../inc/functions.php';
  * http://php.net/manual/fr/function.is-array.php
  */
 
-function calculPlage() {
-
+function calculPlage($a, $b = false, $c = false) {
+    if(is_array($a)) {
+        $total = $a[0] + $a[1] + ($a[2])*2;
+        return $total;
+    } else {
+        $total = $a + $b + 2*$c;
+        return $total;
+    }
 }
 
 
